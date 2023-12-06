@@ -9,8 +9,7 @@ url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorizati
 
 @app.route('/')
 def index():
-    #print('aa')  
-    
+    #print('aa')    
     dict_example ={"city":[],"wx8":[],"maxt8":[],"mint8":[],"pop8":[]}    
     data = urllib.request.urlopen(url).read()
     output = json.loads(data)
