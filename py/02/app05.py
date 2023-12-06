@@ -6,7 +6,6 @@ import json,urllib.request
 app = Flask(__name__)
 
 url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=(API_KEY)&format=JSON'
-
 @app.route('/')
 def index():
     #print('aa')    
