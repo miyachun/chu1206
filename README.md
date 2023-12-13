@@ -2,6 +2,7 @@
 1->環境變數  
 C:\Users\L104\AppData\Local\Programs\Python\Python310\Scripts  
 C:\Users\L104\AppData\Local\Programs\Python\Python310  
+  
 2->安裝virtualenv  
 pip install virtualenv  
 virtualenv 取一個名稱  
