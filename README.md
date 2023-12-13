@@ -1,3 +1,10 @@
+虛擬環境安裝  
+C:\Users\L104\AppData\Local\Programs\Python\Python310\Scripts  
+C:\Users\L104\AppData\Local\Programs\Python\Python310  
+pip install virtualenv  
+virtualenv 取一個名稱  
+到虛擬環境Scripts目錄中啟動  
+activate  
 
 分為colab和py的檔案  
 
