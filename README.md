@@ -19,4 +19,6 @@ activate
 05->line bot  
 06->line bot (linebot.v3)  
 07->flask(天氣+交通)  
+08->flask(sqlite)  
+
 
