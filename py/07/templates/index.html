@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div>
+    <table>
+      <tr>
+    {% for gAns in ansA[:] %}
+       <td>{{gAns}}</td>
+       {% endfor %}          
+       {% if ansA[1]=="晴時多雲" or ansA[1]=="多雲時晴" %}       
+       <td><img src="{{ url_for('static', filename='uploads/b.jpg') }}" alt="" width="100px"></td>       
+        {% endif %}
+        {% if ansA[1]=="多雲" %}        
+        <td><img src="{{ url_for('static', filename='uploads/c.jpg') }}" alt="" width="100px"></td>       
+        {% endif %}
+      </tr>
+    </table>
+        </div>
+  <div style="margin-bottom: 50px; margin-top: 50px">
+    <form method="POST" action="/">
+      <label>城市:</label>
+      <select name="Gcity" method="GET" action="/">
+          <option  selected></option>
+          {% for d in ansCity[:] %}
+            <option value="{{d}}">{{d}}</option>
+          {% endfor %}
+            </select>
+            <input type="submit" value ="Submit" class="btn btn-primary">
+          </form>         
+</div>
+    <table class="table table-striped">
+        {% for key, value in ansAll.items() %}
+        <tr>
+          <td>{{key}}</td>         
+          <td>{{value[0]}}</td>
+          <td>{{value[1]}}</td>
+          <td>{{value[2]}}</td>
+        </tr>
+        {% endfor %}  
+      </table>
+    </div>  
+    {% endblock %}
