@@ -18,9 +18,9 @@ activate
 04->sqlite  
 05->line bot  
 06->line bot (linebot.v3)  
-07->flask(天氣+交通)  
-08->flask(sqlite)  
-09->flask(echarts)  https://echarts.apache.org/examples/en/index.html  
+07->flask(sqlite)  
+08->flask(echarts)  https://echarts.apache.org/examples/en/index.html  
+
 
 
 
